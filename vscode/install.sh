@@ -1,0 +1,9 @@
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension eamodio.gitlens 
+code --install-extension vscodevim.vim
+code --install-extension obinbentley.sass-indented 
+code --install-extension octref.vetur 
+code --install-extension visualstudioexptteam.vscodeintellicode 
+code --install-extension redhat.vscode-yaml 
+code --install-extension ms-python.python

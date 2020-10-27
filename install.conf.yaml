@@ -6,6 +6,13 @@
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
+    "~/Library/Application Support/Code/User/settings.json":
+        path: vscode/settings.json
+        create: true
+    "~/Library/Application Support/Code/User/snippets":
+        path: vscode/snippets
+        create: true
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [bash ./vscode/install.sh, Installing vscode extensions]
