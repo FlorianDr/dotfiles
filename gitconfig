@@ -1,0 +1,13 @@
+[user]
+	name = Florian Dreschner
+	email = code@dreschner.eu
+[commit]
+	gpgsign = true
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+	ignorecase = false
+[diff]
+	tool = opendiff
+[merge]
+	tool = opendiff
