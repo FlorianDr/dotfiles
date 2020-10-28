@@ -8,10 +8,21 @@
     ~/.zshenv: zshenv
     "~/Library/Application Support/Code/User/settings.json":
         path: vscode/settings.json
+        if: '[ `uname` = Darwin ]'
         create: true
     "~/Library/Application Support/Code/User/snippets":
         path: vscode/snippets
+        if: '[ `uname` = Darwin ]'
         create: true
+    "~/.config/Code/User/settings.json":
+        path: vscode/settings.json
+        if: '[ `uname` = Linux ]'
+        create: true
+    "~/.config/Code/User/snippets":
+        path: vscode/snippets
+        if: '[ `uname` = Linux ]'
+        create: true
+
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
