@@ -59,6 +59,7 @@ export PATH="$(brew --prefix openvpn)/sbin:$PATH"
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 export PATH="~/Library/Python/3.7/bin:$PATH"
+export PATH="~/.cargo/bin:$PATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

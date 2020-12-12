@@ -1,8 +1,6 @@
 {
     "git.autofetch": true,
-    "workbench.statusBar.feedback.visible": false,
     "telemetry.enableTelemetry": false,
-    "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
     "extensions.ignoreRecommendations": false,
@@ -12,7 +10,6 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "python.venvPath": "~/.pyenv",
     "javascript.updateImportsOnFileMove.enabled": "never",
-    "python.jediEnabled": false,
     "java.configuration.checkProjectSettingsExclusions": false,
     "git.enableSmartCommit": true,
     "[javascript]": {
@@ -25,16 +22,15 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "workbench.startupEditor": "newUntitledFile",
-    "[vue]": {
-        "editor.defaultFormatter": "remimarsal.prettier-now"
-    },
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
     "editor.fontFamily": "Meslo LG M for Powerline, Menlo, Monaco, 'Courier New', monospace",
     "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.shell.linux": "/bin/zsh",
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "python.languageServer": "Microsoft"
+    "python.languageServer": "Microsoft",
+    "workbench.colorTheme": "Default Dark+"
 }
