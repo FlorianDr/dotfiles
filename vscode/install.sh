@@ -7,3 +7,4 @@ code --install-extension octref.vetur
 code --install-extension visualstudioexptteam.vscodeintellicode 
 code --install-extension redhat.vscode-yaml 
 code --install-extension ms-python.python
+code --install-extension github.codespaces
