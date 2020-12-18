@@ -6,6 +6,7 @@
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
+    ~/.p10k.zsh: p10k.zsh
     "~/Library/Application Support/Code/User/settings.json":
         path: vscode/settings.json
         if: '[ `uname` = Darwin ]'
