@@ -58,15 +58,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ssh-agent yarn zsh-autosuggestions)
+plugins=(git ssh-agent zsh-autosuggestions)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
-export PATH="$(brew --prefix openvpn)/sbin:$PATH"
-export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
-export PATH="/usr/local/opt/node@12/bin:$PATH"
 export PATH="~/Library/Python/3.7/bin:$PATH"
-export PATH="~/.cargo/bin:$PATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -97,49 +93,11 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-# Clean docker images
-alias dclean="docker system prune --volumes"
-alias cdstack="cd ~/Projects/beekeeper-stack"
-alias dc="docker-compose"
-alias dclogs="docker-compose logs -f --tail"
-alias platform-upgrade="brew update && brew upgrade && npm install -g -f npm && npm -g up"
 alias mergepdf="\"/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py\" -o"
-
-function stackinit() {
-  cdstack
-  source stack/bin/activate
-}
-
-function homescreen() {
-   stackinit
-   cd beekeeper && dc up -d && cd ..
-   cd home-screen-configuration && dc up -d && cd ..
-   cd home-screen-mobile-web && dc up -d && cd ..
-   cd home-screen-core-widgets && dc up -d && cd ..
-   cd feature-flags-core-service && dc up -d && cd ..
-   cd stack && dc up -d && cd ..
-}
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-
-# Theme-Related
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# tabtab source for packages
-# uninstall by removing these lines
-[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
 
 export EDITOR="/usr/bin/vim"
 
