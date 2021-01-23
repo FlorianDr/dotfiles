@@ -8,3 +8,9 @@ code --install-extension visualstudioexptteam.vscodeintellicode
 code --install-extension redhat.vscode-yaml 
 code --install-extension ms-python.python
 code --install-extension github.codespaces
+code --install-extension rust-lang.rust
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
+code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
