@@ -32,5 +32,17 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "python.languageServer": "Microsoft",
-    "workbench.colorTheme": "Default Dark+"
+    "workbench.colorTheme": "GitHub Dark",
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "telemetry.enableCrashReporter": false,
+    "editor.tabSize": 2,
+    "remote.SSH.connectTimeout": 60,
+    "editor.accessibilitySupport": "off",
+    "files.autoSave": "afterDelay",
+    "git.confirmSync": false,
+    "redhat.telemetry.enabled": false,
 }
