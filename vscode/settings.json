@@ -32,7 +32,7 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "python.languageServer": "Microsoft",
-    "workbench.colorTheme": "GitHub Dark",
+    "workbench.colorTheme": "GitHub Dark Default",
     "editor.cursorStyle": "line",
     "editor.insertSpaces": false,
     "editor.lineNumbers": "on",

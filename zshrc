@@ -66,7 +66,7 @@ source ~/.zshenv
 
 source $ZSH/oh-my-zsh.sh
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -79,6 +79,7 @@ export LANG=en_US.UTF-8
 # fi
 
 export EDITOR="/usr/bin/vim"
+export GPG_TTY=$(tty)
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -95,13 +96,6 @@ export EDITOR="/usr/bin/vim"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias mergepdf="\"/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py\" -o"
-
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then . '~/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '~/google-cloud-sdk/completion.zsh.inc' ]; then . '~/google-cloud-sdk/completion.zsh.inc'; fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
